@@ -20,7 +20,7 @@ class LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     String os = Platform.operatingSystem;
-    String osString = '${os[0].toUpperCase()}${os.substring(1)}';
+    String osString = Platform.isIOS ? '${os[0]}${os.substring(1).toUpperCase()}' : '${os[0].toUpperCase()}${os.substring(1)}';
     return Scaffold(
       body: new Container(
         padding: const EdgeInsets.all(20.0),
@@ -38,6 +38,7 @@ class LoginPageState extends State<LoginPage> {
                   textAlign: TextAlign.center,
                   style: new TextStyle(
                     fontSize: 25.0,
+                    fontWeight: FontWeight.bold
                   ),
                 ),
               ),

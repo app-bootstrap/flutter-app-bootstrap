@@ -10,7 +10,7 @@ class ListComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     String os = Platform.operatingSystem;
-    String osString = '${os[0].toUpperCase()}${os.substring(1)}';
+    String osString = Platform.isIOS ? '${os[0]}${os.substring(1).toUpperCase()}' : '${os[0].toUpperCase()}${os.substring(1)}';
     return new Container(
       padding: const EdgeInsets.all(20.0),
       child: Column(
