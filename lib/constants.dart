@@ -1,0 +1,13 @@
+const String ENV = "test";
+const String TEST = "TEST";
+const String HOME = "HOME";
+const String PERSONAL = "PERSONAL";
+const String TEST_URL = "https://www.baidu.com";
+const String TEST_TITLE = "Baidu";
+const String WEBVIEW = "Webview";
+const String USERNAME_TIPS = "please input username";
+const String PASSWORD_TIPS = "please input password";
+const String COLOR_1 = "#00bcd4";
+const String COLOR_2 = "#ff4081";
+const String DATAHUB_HOST = "http://localhost:7001";
+const String DATAHUB_HUBNAME_1 = "bootstrap";
